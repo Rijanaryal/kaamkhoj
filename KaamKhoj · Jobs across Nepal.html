@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KaamKhoj · Jobs across Nepal</title>
+<meta name="description" content="Find jobs across Nepal in Nepali or English. Search by city and field, save listings, apply from your phone, and post openings as an employer.">
+<meta property="og:title" content="KaamKhoj · Jobs across Nepal">
+<meta name="theme-color" content="#12307A">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Mukta:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F7FB;--ink:#14213D;--mute:#56637C;--line:#D3DCE8;--blue:#12307A;--red:#C8102E;--card:#fff;--tint:#E3EAF5;--gold:#F2A900;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1424;--ink:#E8EDF6;--mute:#9AA7BF;--line:#26314A;--blue:#8CA9F2;--red:#FF5A72;--card:#151D33;--tint:#1E2945}}
+:root[data-theme="dark"]{--bg:#0E1424;--ink:#E8EDF6;--mute:#9AA7BF;--line:#26314A;--blue:#8CA9F2;--red:#FF5A72;--card:#151D33;--tint:#1E2945}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 Mukta,"Noto Sans Devanagari",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",Mukta,system-ui,sans-serif;line-height:1.12;margin:0}
+a{color:inherit}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.skip{position:absolute;left:8px;top:-60px;background:var(--card);padding:8px 12px;z-index:20}.skip:focus{top:8px}
+.dhaka{height:12px;background-color:var(--blue);background-image:linear-gradient(45deg,var(--red) 25%,transparent 25%,transparent 75%,var(--red) 75%),linear-gradient(45deg,var(--red) 25%,transparent 25%,transparent 75%,var(--red) 75%);background-size:12px 12px;background-position:0 0,6px 6px}
+.w{max-width:1000px;margin:0 auto;padding:0 18px}
+nav{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding:14px 0}
+.brand{font:800 1.5rem "Bricolage Grotesque",sans-serif;text-decoration:none;margin-right:auto}.brand small{font:400 .8rem Mukta,"Noto Sans Devanagari",sans-serif;color:var(--mute);margin-left:6px}
+nav a.l{text-decoration:none;font-weight:600;padding:4px 2px;border-bottom:3px solid transparent}nav a[aria-current]{border-color:var(--red)}
+button,.btn{font:600 15px Mukta,"Noto Sans Devanagari",system-ui,sans-serif;border:1px solid var(--blue);background:var(--blue);color:var(--bg);padding:8px 15px;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block}
+.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+button:disabled{opacity:.55;cursor:default}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.hero{padding:30px 0 8px}
+h1{font-weight:800;font-size:clamp(2rem,6vw,3.3rem);max-width:15em;letter-spacing:-.02em}
+.sub{color:var(--mute);max-width:36em;margin:12px 0 20px}
+.sf{display:grid;grid-template-columns:2fr 1fr auto;gap:8px}
+input,select,textarea{width:100%;font:inherit;padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink)}
+input[type=radio]{width:auto}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.chips button{background:var(--card);color:var(--ink);border-color:var(--line);border-radius:99px;padding:5px 14px}
+.chips button[aria-pressed=true]{background:var(--red);border-color:var(--red);color:#fff}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:18px 0 10px}.row p{margin:0;font-weight:600}.row select{width:auto}
+.job{display:flex;justify-content:space-between;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px;margin-bottom:10px}
+.job.feat{border-left:6px solid var(--gold)}
+.job h3{font-size:1.2rem}.co{margin:2px 0;color:var(--mute)}.pay{font-weight:600;margin:6px 0 0}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 0}.tags span{background:var(--tint);border-radius:4px;padding:1px 8px;font-size:.85rem}.tags .gold{background:var(--gold);color:#241a00;font-weight:600}
+.act{display:flex;flex-direction:column;gap:8px;justify-content:center}
+.sk{height:112px;border-radius:8px;margin-bottom:10px;background:linear-gradient(90deg,var(--tint),var(--line),var(--tint));background-size:200% 100%;animation:sh 1.2s linear infinite}@keyframes sh{to{background-position:-200% 0}}
+@media(prefers-reduced-motion:reduce){.sk{animation:none}}
+.empty{border:2px dashed var(--line);border-radius:8px;padding:26px;text-align:center}
+#more{display:block;margin:14px auto}
+.pg{padding:26px 0}.pg h2{margin:28px 0 10px;font-size:1.4rem}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:0 30px}
+ul.rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}ul.rows li{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line)}
+.mute{color:var(--mute);font-size:.92rem}
+.f{display:block;font-weight:600;font-size:15px;margin-top:10px}.f input,.f select,.f textarea{margin-top:4px;font-weight:400}
+fieldset{border:1px solid var(--line);border-radius:6px;margin:12px 0 0}.rad{display:block;padding:3px 0}
+.err{color:var(--red);font-weight:600;min-height:1.4em;margin:8px 0 0}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.btns form{margin:0}
+details{border-bottom:1px solid var(--line);padding:10px 0}summary{font-weight:600;cursor:pointer}
+dialog{border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);width:calc(100% - 28px);max-width:540px;padding:22px}dialog::backdrop{background:#0009}
+#toasts{position:fixed;left:0;right:0;bottom:calc(14px + env(safe-area-inset-bottom,0px));display:grid;gap:6px;justify-items:center;pointer-events:none;z-index:30}
+.toast{margin:0;background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:6px;font-weight:600}.toast.bad{background:var(--red);color:#fff}
+footer{margin-top:40px;padding:22px 0 30px;border-top:1px solid var(--line);color:var(--mute);font-size:.92rem}
+@media(max-width:640px){.sf,.cols{grid-template-columns:1fr}.job{flex-direction:column}.act{flex-direction:row}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="dhaka" aria-hidden="true"></div>
+<header class="w"><nav aria-label="Main">
+<a class="brand" href="#/">KaamKhoj<small>काम खोज</small></a>
+<a class="l" id="n1" href="#/"></a><a class="l" id="n2" href="#/dash"></a><a class="l" id="n3" href="#/help"></a>
+<button class="ghost" data-a="lang" aria-label="Switch language">EN / ने</button>
+<button class="ghost" data-a="theme" aria-label="Switch light or dark theme">◐</button>
+<span id="who"></span>
+</nav></header>
+<main id="main" class="w"></main>
+<footer class="w"><p>Demo build: listings are samples and everything you enter stays in this browser. A live site needs a server, a database, email or SMS, and real wallet payments.</p></footer>
+<dialog id="dlg"></dialog>
+<div id="toasts" aria-live="polite"></div>
+<script>
+const $=s=>document.querySelector(s),LOCS=["Kathmandu","Lalitpur","Pokhara","Biratnagar","Butwal","Remote"],CATS=["IT","Finance","Tourism","Education","Agriculture","Health"],WAL=["eSewa","Khalti","IME Pay","Fonepay QR","ConnectIPS"],D=864e5;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const ls=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+const T={en:{h1:"Good work in Nepal, found from your phone.",sub:"Search jobs by city and field, save the ones you like, and apply in minutes.",search:"Search",ph:"Job title or company",allLoc:"All locations",all:"All fields",jobs:"Jobs",dash:"Dashboard",help:"Help",in:"Sign in",up:"Create account",out:"Sign out",view:"View",apply:"Apply",applied:"Applied",found:"jobs found",none:"No jobs match. Clear a filter or try another city.",more:"Show more",snew:"Newest first",spay:"Highest pay",slow:"Too many tries. Wait a minute and try again."},
+ne:{h1:"नेपालमै राम्रो काम, आफ्नै मोबाइलबाट खोज्नुहोस्।",sub:"सहर र क्षेत्र अनुसार काम खोज्नुहोस्, मनपरेकालाई सुरक्षित राख्नुहोस् र छिटो आवेदन दिनुहोस्।",search:"खोज्नुहोस्",ph:"कामको नाम वा कम्पनी",allLoc:"सबै स्थान",all:"सबै क्षेत्र",jobs:"कामहरू",dash:"ड्यासबोर्ड",help:"सहयोग",in:"लगइन",up:"खाता खोल्नुहोस्",out:"लगआउट",view:"हेर्नुहोस्",apply:"आवेदन दिनुहोस्",applied:"आवेदन दिइयो",found:"वटा काम भेटियो",none:"कुनै काम भेटिएन। फिल्टर हटाउनुहोस् वा अर्को सहर खोज्नुहोस्।",more:"थप हेर्नुहोस्",snew:"नयाँ पहिले",spay:"धेरै तलब",slow:"धेरै प्रयास भयो। एक मिनेटपछि फेरि प्रयास गर्नुहोस्।"}};
+let lang=ls("kk_l","en"),q="",loc="",cat="",sort="new",shown=6,busy=true,tries=[],cur=0;
+const t=k=>T[lang][k]??T.en[k],nd=s=>lang==="ne"?String(s).replace(/\d/g,d=>"०१२३४५६७८९"[d]):String(s),fm=n=>new Intl.NumberFormat(lang==="ne"?"ne-NP":"en-IN").format(n),fd=ms=>new Date(ms).toLocaleDateString(lang==="ne"?"ne-NP":"en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"Asia/Kathmandu"});
+const S0=[[1,"Frontend Developer (React, Next.js)","Himal Pay","Kathmandu","IT","Full-time",70000,120000,12,1],[2,"Junior Accountant","Terai Agro Co-op","Biratnagar","Finance","Full-time",30000,45000,20],[3,"Trekking Guide (English, Hindi)","Annapurna Trails Co.","Pokhara","Tourism","Seasonal",40000,70000,25],[4,"Maths Teacher, Grades 8–10","Lumbini Learning","Butwal","Education","Full-time",35000,55000,18],[5,"Backend Engineer (Node.js, PostgreSQL)","Kathmandu Dev Studio","Kathmandu","IT","Full-time",90000,150000,15,1],[6,"Staff Nurse","Patan Community Clinic","Lalitpur","Health","Full-time",38000,55000,9],[7,"UI/UX Designer","Studio Sagarmatha","Remote","IT","Contract",60000,100000,22],[8,"Hotel Front Desk Associate","Phewa View Hotel","Pokhara","Tourism","Full-time",28000,40000,14],[9,"Customer Service Officer","Mero Sahakari","Butwal","Finance","Full-time",32000,48000,11],[10,"Agriculture Extension Officer","Kisan Mitra","Biratnagar","Agriculture","Full-time",35000,50000,28],[11,"QA Tester","Himal Pay","Kathmandu","IT","Full-time",45000,70000,16],[12,"English Teacher (online)","Lumbini Learning","Remote","Education","Part-time",30000,50000,21],[13,"Pharmacist","Patan Community Clinic","Lalitpur","Health","Full-time",45000,65000,13],[14,"Digital Marketing Executive","Studio Sagarmatha","Kathmandu","IT","Full-time",40000,65000,24]];
+const SEED=S0.map(([id,title,co,loc,cat,type,min,max,d,f])=>({id,title,co,loc,cat,type,min,max,dl:Date.now()+d*D,f:!!f,desc:`${title} at ${co}. Open to candidates based in ${loc==="Remote"?"Nepal":loc}. Shortlisted candidates are contacted by phone, so keep your number current.`}));
+const jobs=()=>[...SEED,...ls("kk_j",[])],users=()=>ls("kk_u",[]),me=()=>users().find(u=>u.email===ls("kk_s","")),applied=id=>ls("kk_a",[]).some(a=>a.id===id&&a.e===me()?.email);
+const list=()=>jobs().filter(j=>(!cat||j.cat===cat)&&(!loc||j.loc===loc)&&(!q||(j.title+" "+j.co).toLowerCase().includes(q))).sort(sort==="pay"?(a,b)=>b.max-a.max:(a,b)=>(b.f?1:0)-(a.f?1:0)||b.id-a.id);
+const hx=async(e,p)=>[...new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(e+":"+p)))].map(b=>b.toString(16).padStart(2,"0")).join("");
+const main=$("#main"),dlg=$("#dlg");
+function toast(m,bad){const d=document.createElement("p");d.className="toast"+(bad?" bad":"");d.textContent=m;$("#toasts").append(d);setTimeout(()=>d.remove(),3600)}
+const card=j=>{const s=ls("kk_sv",[]).includes(j.id);return `<article class="job${j.f?" feat":""}"><div><h3>${esc(j.title)}</h3><p class="co">${esc(j.co)} · ${esc(j.loc)}</p><p class="tags"><span>${esc(j.type)}</span><span>${esc(j.cat)}</span>${j.f?'<span class="gold">Featured</span>':""}</p><p class="pay">NPR ${fm(j.min)} – ${fm(j.max)} / month</p></div><div class="act"><button class="ghost" data-a="save" data-v="${j.id}" aria-pressed="${s}" aria-label="${s?"Remove from saved":"Save job"}">${s?"♥":"♡"}</button><button data-a="view" data-v="${j.id}">${t("view")}</button></div></article>`};
+function home(){main.innerHTML=`<section class="hero"><h1>${t("h1")}</h1><p class="sub">${t("sub")}</p><form class="sf" data-f="s" role="search"><label class="sr" for="q">${t("search")}</label><input id="q" type="search" placeholder="${t("ph")}" value="${esc(q)}"><label class="sr" for="loc">Location</label><select id="loc"><option value="">${t("allLoc")}</option>${LOCS.map(l=>`<option${l===loc?" selected":""}>${l}</option>`).join("")}</select><button>${t("search")}</button></form><div class="chips" role="group" aria-label="Field"><button data-a="cat" data-v="">${t("all")}</button>${CATS.map(c=>`<button data-a="cat" data-v="${c}">${c}</button>`).join("")}</div></section><section><div class="row"><p id="count" aria-live="polite"></p><label class="sr" for="so">Sort</label><select id="so"><option value="new"${sort==="new"?" selected":""}>${t("snew")}</option><option value="pay"${sort==="pay"?" selected":""}>${t("spay")}</option></select></div><div id="list"></div><button id="more" class="ghost" data-a="more"></button></section>`;draw()}
+function draw(){const el=$("#list");if(!el)return;const L=list();$("#count").textContent=nd(L.length)+" "+t("found");document.querySelectorAll(".chips button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===cat));el.innerHTML=busy?'<div class="sk"></div>'.repeat(4):L.length?L.slice(0,shown).map(card).join(""):`<div class="empty"><p>${t("none")}</p></div>`;$("#more").hidden=busy||L.length<=shown;$("#more").textContent=t("more")}
+function jobDlg(id){cur=id;const j=jobs().find(x=>x.id===id);if(!j)return;const s=ls("kk_sv",[]).includes(id),a=applied(id);dlg.innerHTML=`<h2>${esc(j.title)}</h2><p class="co">${esc(j.co)} · ${esc(j.loc)} · ${esc(j.type)}</p><p class="pay">NPR ${fm(j.min)} – ${fm(j.max)} / month</p><p>${esc(j.desc)}</p><p class="mute">Apply by ${fd(j.dl)} (Nepal time). Never pay money to get a job.</p><div class="btns"><button data-a="apply" data-v="${id}"${a?" disabled":""}>${a?t("applied"):t("apply")}</button><button class="ghost" data-a="save" data-v="${id}" aria-pressed="${s}">${s?"♥ Saved":"♡ Save"}</button><a class="btn ghost" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent(j.title+" at "+j.co+" on KaamKhoj")}">Share on WhatsApp</a><form method="dialog"><button class="ghost">Close</button></form></div>`;if(!dlg.open)dlg.showModal()}
+function authDlg(m){const up=m==="up";dlg.innerHTML=`<h2>${up?t("up"):t("in")}</h2><form data-f="auth" data-m="${m}" novalidate>${up?'<label class="f">Full name<input name="name" autocomplete="name"></label><label class="f">Mobile number<input name="phone" inputmode="tel" placeholder="98XXXXXXXX" autocomplete="tel"></label>':""}<label class="f">Email<input name="email" type="email" autocomplete="email"></label><label class="f">Password<input name="pw" type="password" autocomplete="${up?"new":"current"}-password" placeholder="At least 8 characters"></label>${up?'<fieldset><legend>I am a</legend><label class="rad"><input type="radio" name="role" value="seeker" checked> Job seeker</label><label class="rad"><input type="radio" name="role" value="employer"> Employer</label></fieldset>':""}<p class="err" role="alert"></p><div class="btns"><button>${up?t("up"):t("in")}</button><button type="button" class="ghost" data-a="${up?"in":"up"}">${up?t("in"):t("up")}</button></div></form>`;if(!dlg.open)dlg.showModal()}
+function payDlg(id){const j=jobs().find(x=>x.id==id);dlg.innerHTML=`<h2>Feature this job</h2><p>${esc(j.title)} stays at the top of search for 14 days.</p><form data-f="pay" data-id="${id}"><fieldset><legend>Pay with</legend>${WAL.map((w,i)=>`<label class="rad"><input type="radio" name="w" value="${w}"${i?"":" checked"}> ${w}</label>`).join("")}</fieldset><p class="mute">Demo only: no money moves. A live site sends you to the wallet's merchant checkout and confirms payment on the server.</p><div class="btns"><button>Pay NPR 1,500</button><button type="button" class="ghost" data-a="x">Cancel</button></div></form>`;if(!dlg.open)dlg.showModal()}
+const li=(a,b)=>`<li><span>${a}</span><span>${b}</span></li>`;
+function dash(){const u=me();if(!u){main.innerHTML=`<section class="pg"><h1>${t("dash")}</h1><div class="empty" style="margin-top:18px"><p>Sign in to see your applications, saved jobs and profile.</p><button data-a="in">${t("in")}</button></div></section>`;return}
+const J=jobs(),A=ls("kk_a",[]),mine=A.filter(a=>a.e===u.email),S=ls("kk_sv",[]),emp=u.role==="employer",own=ls("kk_j",[]).filter(j=>j.o===u.email);
+const prof=`<h2>Profile</h2><form data-f="prof" novalidate><label class="f">Full name<input name="name" value="${esc(u.name)}"></label><label class="f">Mobile number<input name="phone" inputmode="tel" value="${esc(u.phone)}"></label><p class="err" role="alert"></p><div class="btns"><button>Save profile</button></div></form>`;
+const post=`<h2>Post a job</h2><form data-f="post" novalidate><label class="f">Job title<input name="title"></label><label class="f">Company<input name="co" value="${esc(u.name)}"></label><div class="cols"><label class="f">City<select name="loc">${LOCS.map(l=>`<option>${l}</option>`).join("")}</select></label><label class="f">Field<select name="cat">${CATS.map(l=>`<option>${l}</option>`).join("")}</select></label><label class="f">Monthly pay from (NPR)<input name="min" type="number" min="1"></label><label class="f">Monthly pay to (NPR)<input name="max" type="number" min="1"></label></div><label class="f">Type<select name="type"><option>Full-time</option><option>Part-time</option><option>Contract</option><option>Seasonal</option></select></label><label class="f">Description<textarea name="desc" rows="4"></textarea></label><p class="err" role="alert"></p><div class="btns"><button>Publish job</button></div></form>`;
+const listings=`<h2>Your listings</h2>${own.length?`<ul class="rows">${own.map(j=>li(`<b>${esc(j.title)}</b> <span class="mute">${A.filter(a=>a.id===j.id).length} applications</span>`,`${j.f?'<span class="tags"><span class="gold">Featured</span></span>':`<button class="ghost" data-a="feat" data-v="${j.id}">Feature</button>`} <button class="ghost" data-a="del" data-v="${j.id}">Remove</button>`)).join("")}</ul>`:'<div class="empty"><p>No listings yet. Post your first job above.</p></div>'}<p class="mute">${own.length} listings · ${own.reduce((n,j)=>n+A.filter(a=>a.id===j.id).length,0)} applications · ${own.filter(j=>j.f).length} featured</p>`;
+const apps=`<h2>Applications</h2>${mine.length?`<ul class="rows">${mine.map(a=>{const j=J.find(x=>x.id===a.id);return j?li(`<b>${esc(j.title)}</b> <span class="mute">${esc(j.co)}</span>`,`Submitted ${fd(a.at)}`):""}).join("")}</ul>`:'<div class="empty"><p>No applications yet. Find a job and press Apply.</p></div>'}`;
+const sav=`<h2>Saved jobs</h2>${S.length?`<ul class="rows">${S.map(id=>{const j=J.find(x=>x.id===id);return j?li(`<b>${esc(j.title)}</b> <span class="mute">${esc(j.co)}</span>`,`<button class="ghost" data-a="view" data-v="${j.id}">${t("view")}</button>`):""}).join("")}</ul>`:'<div class="empty"><p>Nothing saved. Tap ♡ on a job to keep it here.</p></div>'}`;
+main.innerHTML=`<section class="pg"><h1>${t("dash")}</h1><p class="sub">${esc(u.name)} · ${emp?"Employer":"Job seeker"}</p><div class="cols"><div>${prof}${emp?post:apps+sav}</div><div>${emp?listings:""}${emp?"":""}</div></div></section>`}
+const FAQ=[["Is KaamKhoj free for job seekers?","Yes. Employers pay only if they want a listing featured."],["How do I spot a fake job?","Never pay to get a job. If a listing asks for money, leave it. Before sharing documents with a foreign-employment agency, check that it is licensed."],["Can I use it in Nepali?","Yes. Press the EN / ने button at the top."],["Does it work on slow data?","Pages are light, and your account, saved jobs and applications are kept on your device."]];
+function help(){main.innerHTML=`<section class="pg"><h1>${t("help")}</h1><div>${FAQ.map(([a,b])=>`<details><summary>${a}</summary><p>${b}</p></details>`).join("")}</div><h2>Contact us</h2><form data-f="msg" novalidate><label class="f">Name<input name="n"></label><label class="f">Mobile number<input name="p" inputmode="tel"></label><label class="f">Message<textarea name="m" rows="4"></textarea></label><p class="err" role="alert"></p><div class="btns"><button>Send message</button></div></form></section>`}
+function render(){const h=location.hash,u=me();$("#n1").textContent=t("jobs");$("#n2").textContent=t("dash");$("#n3").textContent=t("help");[["#n1",""],["#n2","#/dash"],["#n3","#/help"]].forEach(([s,p])=>{const e=$(s);(h===p||(!p&&h!=="#/dash"&&h!=="#/help"))?e.setAttribute("aria-current","page"):e.removeAttribute("aria-current")});$("#who").innerHTML=u?`<button class="ghost" data-a="out">${t("out")}</button>`:`<button class="ghost" data-a="in">${t("in")}</button> <button data-a="up">${t("up")}</button>`;h==="#/dash"?dash():h==="#/help"?help():home();scrollTo(0,0)}
+const refresh=()=>{const h=location.hash;if(h==="#/dash")dash();else if(h!=="#/help")draw();if(dlg.open&&cur&&dlg.querySelector('[data-a="apply"]'))jobDlg(cur)};
+const act={cat:v=>{cat=v;shown=6;draw()},more:()=>{shown+=6;draw()},view:v=>jobDlg(+v),x:()=>dlg.close(),in:()=>authDlg("in"),up:()=>authDlg("up"),
+out:()=>{sv("kk_s","");toast("Signed out.");render()},
+lang:()=>{lang=lang==="en"?"ne":"en";sv("kk_l",lang);document.documentElement.lang=lang;render()},
+theme:()=>{const r=document.documentElement,dk=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;r.dataset.theme=dk?"light":"dark";sv("kk_t",r.dataset.theme)},
+save:v=>{v=+v;let s=ls("kk_sv",[]);const had=s.includes(v);s=had?s.filter(x=>x!==v):[...s,v];sv("kk_sv",s);toast(had?"Removed from saved.":"Job saved.");refresh()},
+apply:v=>{const u=me();v=+v;if(!u){authDlg("in");return toast("Sign in to apply.",1)}if(u.role==="employer")return toast("Employer accounts can't apply. Use a job seeker account.",1);const A=ls("kk_a",[]);A.push({id:v,e:u.email,at:Date.now()});sv("kk_a",A);toast("Application sent.");jobDlg(v)},
+feat:v=>payDlg(v),del:v=>{sv("kk_j",ls("kk_j",[]).filter(j=>j.id!=v));toast("Listing removed.");dash()}};
+const forms={s:()=>{q=$("#q").value.trim().toLowerCase();loc=$("#loc").value;shown=6;draw()},
+auth:async f=>{const d=Object.fromEntries(new FormData(f)),up=f.dataset.m==="up",er=f.querySelector(".err"),e=(d.email||"").trim().toLowerCase(),n=Date.now(),ph=(d.phone||"").replace(/[\s-]/g,"");tries=tries.filter(x=>n-x<6e4);if(tries.length>=5)return er.textContent=t("slow");tries.push(n);
+if(up&&(d.name||"").trim().length<2)return er.textContent="Enter your full name.";
+if(up&&!/^(\+977)?9[78]\d{8}$/.test(ph))return er.textContent="Enter a valid Nepal mobile number, like 98XXXXXXXX.";
+if(!/^\S+@\S+\.\S+$/.test(e))return er.textContent="Enter a valid email address.";
+if((d.pw||"").length<8)return er.textContent="Password needs at least 8 characters.";
+let h;try{h=await hx(e,d.pw)}catch(x){return er.textContent="This browser can't secure passwords. Open the page over HTTPS."}
+const U=users(),x=U.find(u=>u.email===e);
+if(up){if(x)return er.textContent="That email already has an account. Sign in instead.";U.push({email:e,name:d.name.trim(),phone:ph,role:d.role,h});sv("kk_u",U)}else if(!x||x.h!==h)return er.textContent="Email or password is incorrect.";
+sv("kk_s",e);dlg.close();toast(up?"Account created. Welcome!":"Signed in.");render()},
+prof:f=>{const d=Object.fromEntries(new FormData(f)),er=f.querySelector(".err"),ph=d.phone.replace(/[\s-]/g,"");if(d.name.trim().length<2)return er.textContent="Enter your full name.";if(!/^(\+977)?9[78]\d{8}$/.test(ph))return er.textContent="Enter a valid Nepal mobile number.";const U=users(),u=U.find(x=>x.email===me().email);u.name=d.name.trim();u.phone=ph;sv("kk_u",U);toast("Profile saved.");dash()},
+post:f=>{const d=Object.fromEntries(new FormData(f)),er=f.querySelector(".err"),mn=+d.min,mx=+d.max;if(d.title.trim().length<4)return er.textContent="Add a job title of at least 4 characters.";if(d.co.trim().length<2)return er.textContent="Add the company name.";if(!(mn>0&&mx>=mn))return er.textContent="Enter pay as numbers, with the second at least the first.";if(d.desc.trim().length<20)return er.textContent="Describe the job in at least 20 characters.";const J=ls("kk_j",[]);J.push({id:Date.now(),title:d.title.trim(),co:d.co.trim(),loc:d.loc,cat:d.cat,type:d.type,min:mn,max:mx,dl:Date.now()+30*D,f:false,desc:d.desc.trim(),o:me().email});sv("kk_j",J);toast("Job published.");dash()},
+pay:f=>{const J=ls("kk_j",[]),j=J.find(x=>x.id==f.dataset.id);if(j)j.f=true;sv("kk_j",J);dlg.close();toast("Listing featured (demo payment).");dash()},
+msg:f=>{const d=Object.fromEntries(new FormData(f)),er=f.querySelector(".err");if(d.n.trim().length<2||d.m.trim().length<10)return er.textContent="Add your name and a message of at least 10 characters.";er.textContent="";f.reset();toast("Message saved (demo).")}};
+document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(b&&act[b.dataset.a])act[b.dataset.a](b.dataset.v)});
+document.addEventListener("submit",e=>{const f=e.target.closest("form[data-f]");if(f){e.preventDefault();forms[f.dataset.f](f)}});
+document.addEventListener("change",e=>{if(e.target.id==="so"){sort=e.target.value;draw()}if(e.target.id==="loc"){loc=e.target.value;shown=6;draw()}});
+dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+addEventListener("hashchange",render);
+const th=ls("kk_t",null);if(th)document.documentElement.dataset.theme=th;document.documentElement.lang=lang;
+render();setTimeout(()=>{busy=false;draw()},600);
+</script>
+</body>
+</html>
